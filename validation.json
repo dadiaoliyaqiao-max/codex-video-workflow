@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-08",
+  "date": "2026-11-11",
   "scope": "本机新目录下的工具源码包、规则和合成短片验证；不是新业务视频验收",
   "documentation_revision": "补充逐步工具调用与开源项目；本轮只更新文字/链接/包清单，不重复合成短片测试",
   "runtime_doctor": {
@@ -56,5 +56,17 @@
     "ffmpeg": "8.1.2",
     "ffprobe": "8.1.2",
     "external_services_and_other_computers_verified": false
+  },
+  "one_click_installer": {
+    "local_core_run": "passed",
+    "core_report": "install-logs/install-report.json (local only, not committed)",
+    "lockfile_install": "Hypit 0.3.1, HyperFrames 0.9.30, Puppeteer 25.17.0",
+    "browser": "system Chrome detected via HyperFrames browser path",
+    "bootstrap_parser": "passed",
+    "bootstrap_public_download": "pending publication",
+    "fresh_machine_winget": "not verified",
+    "codex_skills": "not verified in local smoke run",
+    "chinese_asr_model": "not verified in local smoke run",
+    "other_computers": "not verified"
   }
 }

@@ -1,0 +1,9 @@
+{
+  "name": "codex-video-workflow-hypit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pinned Hypit CLI for the video workflow",
+  "dependencies": {
+    "@hypit/hypit": "0.3.1"
+  }
+}

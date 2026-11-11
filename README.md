@@ -4,7 +4,7 @@
 
 ## 从哪里开始
 
-1. 第一次使用：阅读[同事下载与使用](同事下载与使用.md)。公开仓库可直接下载，无需 GitHub 账号；配置本机环境后运行 `工作流工具.cmd doctor`。
+1. 第一次使用：无需 GitHub 账号，在 Windows PowerShell 粘贴[同事下载与使用](同事下载与使用.md)中的一行命令，即可下载本包、安装缺失的基础工具及 Hypit、HyperFrames、Puppeteer和对应Codex技能，并做本机检查。已下载时也可双击 **`一键安装并检查.cmd`**。
 2. 开始一个视频：阅读[开始使用](开始使用.md)，将素材放进独立的 `剪辑项目/项目名/素材/`，让 Codex 读取根目录 `AGENTS.md` 和 `workflow-kit/codex-video-workflow/SKILL.md`。
 3. 了解每一步：阅读[完整工作流](完整工作流.md)和[逐步工具调用与开源项目](逐步工具调用与开源项目.md)。
 4. 已装过旧包：按[从旧包更新](从旧包更新.md)迁移，保留旧项目与本机配置。
@@ -31,6 +31,6 @@
 
 ## 适用范围与验证
 
-仓库入口是 Windows `工作流工具.cmd`。最低环境为 Node.js、Python 3.10+、Pillow、带 `libass` 和 `libx264` 的 FFmpeg/FFprobe；Hypit、转写及复杂动效环境按需配置。[环境与命令](环境与命令.md)列出具体入口和限制。[validation.json](validation.json)记录此前本机合成测试的范围，不代表新电脑、真实影片或第三方服务已经通过验收。
+仓库入口是 Windows `工作流工具.cmd`，`工作流工具.cmd install`与双击一键安装入口等价。安装器以 WinGet 安装缺失的 Node.js 22+、Python 3.10+、FFmpeg/FFprobe、Git、CMake，再安装本目录锁定的 Python/npm 依赖并准备本地中文转写。它不会安装 Codex 桌面应用、登录账号、购买模型服务或创建视频。[环境与命令](环境与命令.md)列出范围和限制。[validation.json](validation.json)记录此前本机合成测试的范围，不代表新电脑、真实影片或第三方服务已经通过验收。
 
 `video-use` 随附代码的许可见 [video-use/LICENSE](video-use/LICENSE)；其他外部项目的安装、许可和素材授权需分别确认。更多来源见[来源与边界](来源与边界.md)。

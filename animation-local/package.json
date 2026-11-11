@@ -1,0 +1,13 @@
+{
+  "name": "codex-video-workflow-animation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local animation and cover rendering tools for the video workflow",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "hyperframes": "0.9.30",
+    "puppeteer": "25.17.0"
+  }
+}

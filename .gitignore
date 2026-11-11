@@ -6,6 +6,10 @@ runtime.local.json
 __pycache__/
 *.pyc
 node_modules/
+install-logs/
+.agents/skills/
+.hyperframes/
+.cache/
 workflow-kit/_verification/
 剪辑项目/*/
 !剪辑项目/放置说明.txt
