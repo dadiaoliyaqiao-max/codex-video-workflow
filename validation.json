@@ -67,6 +67,7 @@
     "fresh_machine_winget": "not verified",
     "codex_skills": "not verified in local smoke run",
     "chinese_asr_model": "not verified in local smoke run",
-    "other_computers": "not verified"
+    "other_computers": "not verified",
+    "bootstrap_repeat_update": "passed: second public archive extraction retained runtime.local.json and 剪辑项目/ test file"
   }
 }

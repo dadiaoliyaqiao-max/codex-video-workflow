@@ -12,19 +12,18 @@ $projectRoot = Join-Path $destinationFull $folderName
 $installer = Join-Path $projectRoot '一键安装并检查.cmd'
 $installerScript = Join-Path $projectRoot 'scripts\install-windows.ps1'
 
-if (-not (Test-Path -LiteralPath $installer -PathType Leaf)) {
-    if (Test-Path -LiteralPath $projectRoot) {
-        throw "An incomplete folder already exists: $projectRoot. Choose another -Destination or move the incomplete folder aside."
-    }
-    New-Item -ItemType Directory -Path $destinationFull -Force | Out-Null
-    $archive = Join-Path $env:TEMP ('codex-video-workflow-' + [guid]::NewGuid().ToString('N') + '.zip')
-    try {
-        Write-Host "Downloading public workflow from GitHub..."
-        Invoke-WebRequest -Uri $archiveUrl -OutFile $archive -UseBasicParsing
-        Expand-Archive -LiteralPath $archive -DestinationPath $destinationFull
-    } finally {
-        if (Test-Path -LiteralPath $archive) { Remove-Item -LiteralPath $archive -Force }
-    }
+if ((Test-Path -LiteralPath $projectRoot) -and
+    -not (Test-Path -LiteralPath $installer -PathType Leaf)) {
+    throw "An incomplete folder already exists: $projectRoot. Choose another -Destination or move the incomplete folder aside."
+}
+New-Item -ItemType Directory -Path $destinationFull -Force | Out-Null
+$archive = Join-Path $env:TEMP ('codex-video-workflow-' + [guid]::NewGuid().ToString('N') + '.zip')
+try {
+    Write-Host "Downloading current public workflow from GitHub..."
+    Invoke-WebRequest -Uri $archiveUrl -OutFile $archive -UseBasicParsing
+    Expand-Archive -LiteralPath $archive -DestinationPath $destinationFull -Force
+} finally {
+    if (Test-Path -LiteralPath $archive) { Remove-Item -LiteralPath $archive -Force }
 }
 
 if (-not (Test-Path -LiteralPath $installer -PathType Leaf) -or
