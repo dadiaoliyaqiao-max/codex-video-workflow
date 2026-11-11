@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Codex 视频剪辑工作流｜同事使用教程</title>
+  <meta name="description" content="从一键安装、准备素材、在 Codex 开工，到三次确认和最终交付的完整视频剪辑教程。">
+  <style>
+    :root{--ink:#182c38;--muted:#536771;--subtle:#73858d;--line:#d8e3e5;--paper:#f6f9f8;--white:#fff;--teal:#0d736e;--deep:#0c484d;--mint:#d7eee9;--gold:#e3a63d;--warm:#fff4dc;--blue:#eaf2f9;--shadow:0 18px 48px rgba(13,49,55,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",system-ui,sans-serif;line-height:1.75}a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}button{font:inherit}h1,h2,h3,p{margin-top:0}h1,h2,h3{line-height:1.35;letter-spacing:-.025em}h1{font-size:clamp(2.3rem,5vw,4.4rem);margin-bottom:1rem}h2{font-size:clamp(1.7rem,3vw,2.35rem);margin-bottom:.7rem}h3{font-size:1.18rem;margin-bottom:.45rem}p{margin-bottom:1rem}strong{color:#123d41}code{font-family:"Cascadia Code","Consolas",monospace;font-size:.9em}small,.small{font-size:.88rem;color:var(--muted)}
+    .layout{display:grid;grid-template-columns:252px minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;overflow:auto;background:#103e42;color:#d7ebea;padding:28px 20px;display:flex;flex-direction:column;gap:22px}.brand{display:flex;gap:10px;align-items:center;color:white;font-weight:800;letter-spacing:.01em;line-height:1.3}.brand-mark{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:#e2b45e;color:#173a39;font-weight:900;flex:0 0 auto}.sidebar p{color:#a9c7c5;font-size:.82rem;margin:0}.sidebar nav{display:grid;gap:3px}.sidebar nav a{display:flex;gap:11px;align-items:center;color:#c6ddda;padding:10px 11px;border-radius:9px;font-size:.88rem;line-height:1.3}.sidebar nav a:hover,.sidebar nav a.active{background:#23575a;color:#fff;text-decoration:none}.sidebar nav span{color:#81b5b1;font-variant-numeric:tabular-nums;font-size:.73rem}.sidebar-bottom{margin-top:auto;border-top:1px solid #326568;padding-top:18px}.sidebar-bottom a{color:#c7e7e3;font-size:.82rem}
+    main{min-width:0}.hero{background:radial-gradient(circle at 83% 8%,#26767b 0,transparent 35%),linear-gradient(125deg,#123d43,#0a292e);color:#fff;padding:clamp(32px,5vw,80px) clamp(22px,5vw,76px) 44px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-120px;top:-170px;box-shadow:0 0 0 85px rgba(255,255,255,.035),0 0 0 170px rgba(255,255,255,.025);pointer-events:none}.hero-inner{max-width:1120px;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#d6ebdf;font-size:.75rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;margin-bottom:28px}.eyebrow:before{content:"";width:24px;height:2px;background:var(--gold)}.hero h1{max-width:850px}.hero h1 em{font-style:normal;color:#e7bf71}.hero-lead{font-size:1.12rem;max-width:790px;color:#d1e1df}.hero-meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}.hero-meta span{border:1px solid rgba(255,255,255,.25);border-radius:100px;padding:5px 11px;font-size:.78rem;color:#e2efed}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:31px}.button{display:inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:10px;padding:10px 17px;font-weight:750;font-size:.9rem;border:1px solid transparent;cursor:pointer;transition:.15s ease}.button:hover{text-decoration:none;transform:translateY(-1px)}.button.primary{background:#e3b15a;color:#173a3a}.button.ghost{border-color:#8eb2af;color:#fff;background:rgba(255,255,255,.04)}.button.secondary{background:#eef7f5;color:var(--deep);border-color:#b8d9d4}
+    .content{max-width:1232px;margin:auto;padding:0 clamp(20px,4vw,66px) 100px}.section{scroll-margin-top:25px;padding:68px 0 0}.section-head{display:flex;gap:18px;align-items:flex-start;margin-bottom:24px}.section-number{display:grid;place-items:center;flex:0 0 auto;width:36px;height:36px;border-radius:10px;background:#d9eeea;color:var(--deep);font-size:.82rem;font-weight:900}.section-lead{color:var(--muted);max-width:820px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card,.panel{background:var(--white);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.card{padding:21px 22px}.card p:last-child{margin-bottom:0}.card .index{display:inline-flex;align-items:center;justify-content:center;background:var(--mint);color:var(--deep);width:31px;height:31px;border-radius:50%;font-weight:900;font-size:.8rem;margin-bottom:14px}.card .label{font-size:.69rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:var(--teal);margin-bottom:8px}.panel{padding:24px;margin-bottom:16px}.panel.soft{background:#edf5f3}.callout{border-left:4px solid var(--teal);background:#e8f4f1;padding:15px 17px;border-radius:0 11px 11px 0;margin:18px 0}.callout.warning{border-left-color:#cf8a20;background:var(--warm)}.callout p:last-child{margin:0}.callout strong{display:block;margin-bottom:3px}.mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.mini{padding:16px;border-radius:12px;background:#f3f8f7;border:1px solid #dceae7}.mini b{display:block;font-size:.94rem;margin-bottom:4px}.mini span{font-size:.84rem;color:var(--muted)}
+    .codebox{position:relative;background:#102f35;color:#e8f3f0;border-radius:13px;margin:15px 0;overflow:hidden}.codebox .codebar{display:flex;justify-content:space-between;align-items:center;padding:8px 12px 8px 18px;border-bottom:1px solid #2b5055;color:#a8cecb;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}.codebox pre{white-space:pre-wrap;overflow-wrap:anywhere;margin:0;padding:17px 19px 20px;line-height:1.65;font-size:.84rem}.copy{background:#264e52;color:#fff;border:1px solid #537d7b;border-radius:7px;padding:5px 10px;cursor:pointer;font-size:.75rem}.copy:hover{background:#33726f}.filetree{background:#f1f6f5;border:1px solid #d8e7e4;border-radius:12px;padding:18px 20px;font-family:"Cascadia Code",Consolas,monospace;font-size:.82rem;white-space:pre-wrap;line-height:1.7;overflow-wrap:anywhere}.split{display:grid;grid-template-columns:1fr 1fr;gap:16px}.checklist{display:grid;gap:9px}.checkrow{display:flex;align-items:flex-start;gap:10px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:.88rem}.checkrow input{appearance:none;width:18px;height:18px;border:1.5px solid #7a9b99;border-radius:5px;margin:4px 0 0;flex:0 0 auto;cursor:pointer}.checkrow input:checked{background:var(--teal);border-color:var(--teal)}.checkrow input:checked:after{content:"✓";display:block;color:white;font-size:13px;line-height:16px;text-align:center}.checkrow:has(input:checked) span{text-decoration:line-through;color:var(--subtle)}.progress{height:8px;background:#d8e9e6;border-radius:8px;overflow:hidden}.progress>span{display:block;height:100%;width:0;background:var(--teal);transition:width .2s}.progress-label{font-size:.78rem;color:var(--muted);margin:7px 0 0}
+    .timeline{display:grid;gap:14px;position:relative}.phase{display:grid;grid-template-columns:58px minmax(0,1fr);gap:12px;align-items:start}.phase-count{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#173f43;color:#fff;font-weight:900;position:relative;z-index:1}.phase-body{background:white;border:1px solid var(--line);border-radius:15px;padding:21px 23px}.phase-body header{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}.phase-body h3{margin:0}.phase-body .gate{font-size:.7rem;color:#73500d;background:#fff0c9;border:1px solid #ebcf83;border-radius:99px;padding:2px 9px;font-weight:800}.phase-cols{display:grid;grid-template-columns:1fr 1fr;gap:17px}.phase-cols>div{border-top:1px solid #e5eded;padding-top:12px}.phase-cols b{display:block;font-size:.75rem;letter-spacing:.07em;color:var(--teal);margin-bottom:5px}.phase-cols p{font-size:.88rem;margin:0;color:#435963}.phase-output{margin-top:13px;padding-top:12px;border-top:1px solid #e5eded;font-size:.82rem;color:var(--muted)}.phase-output code{color:#27575b}.note{color:var(--muted);font-size:.83rem}
+    .table-wrap{overflow:auto;background:white;border:1px solid var(--line);border-radius:14px}.table{width:100%;border-collapse:collapse;min-width:700px}.table th{text-align:left;color:#48606a;background:#edf5f3;font-size:.75rem;letter-spacing:.04em}.table td,.table th{padding:12px 15px;border-bottom:1px solid #e7eeee;vertical-align:top}.table td{font-size:.83rem}.table tr:last-child td{border-bottom:0}.pill{display:inline-block;background:#e3f2ee;color:#0c625f;border-radius:99px;padding:2px 8px;font-size:.72rem;font-weight:750}.pill.optional{background:#fff0d9;color:#8a5a10}.pill.self{background:#e9eef8;color:#3d5890}
+    .steps-list{margin:8px 0 0;padding-left:20px}.steps-list li{padding-left:4px;margin:6px 0}.faq{display:grid;gap:9px}.faq details{background:#fff;border:1px solid var(--line);border-radius:11px;padding:0 17px}.faq summary{cursor:pointer;font-weight:750;padding:13px 0}.faq details p{font-size:.87rem;color:var(--muted);margin:0 0 15px}.footer{margin-top:70px;padding:28px 0;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted)}.footer-links{display:flex;flex-wrap:wrap;gap:10px 19px;margin-top:9px}
+    @media(max-width:1100px){.layout{grid-template-columns:1fr}.sidebar{position:static;height:auto;padding:16px 20px;gap:10px}.sidebar nav{display:flex;overflow:auto;white-space:nowrap}.sidebar nav a{flex:0 0 auto;padding:7px 9px}.sidebar-bottom,.sidebar p{display:none}.hero{padding-top:50px}}
+    @media(max-width:720px){.hero{padding:40px 20px}.hero h1{font-size:2.42rem}.hero-lead{font-size:1rem}.content{padding:0 17px 60px}.section{padding-top:47px}.cards,.split,.mini-grid,.phase-cols{grid-template-columns:1fr}.phase{grid-template-columns:39px minmax(0,1fr);gap:5px}.phase-count{width:32px;height:32px;font-size:.8rem}.phase-body{padding:17px}.card,.panel{padding:18px}.section-number{width:29px;height:29px}.section-head{gap:10px}}
+    @media print{.sidebar,.hero-actions,.copy{display:none!important}.layout{display:block}.hero{background:white!important;color:#182c38;padding:12px 0 20px}.hero h1 em{color:#0d736e}.hero-lead,.hero-meta span{color:#182c38}.hero-meta span{border-color:#ddd}.content{padding:0}.section{padding-top:22px;break-inside:avoid}.card,.panel,.phase-body,.table-wrap{box-shadow:none;break-inside:avoid}.codebox{background:#f1f4f4;color:#111;border:1px solid #ccc}.codebox .codebar{color:#222}.footer{margin-top:20px}}
+  </style>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" aria-label="教程目录">
+    <div class="brand"><span class="brand-mark">▶</span><span>CODEX<br>VIDEO WORKFLOW</span></div>
+    <p>同事版操作手册 · 2026-11-11</p>
+    <nav>
+      <a href="#overview"><span>01</span>先看全流程</a>
+      <a href="#install"><span>02</span>一键安装</a>
+      <a href="#materials"><span>03</span>准备素材</a>
+      <a href="#start"><span>04</span>在 Codex 开工</a>
+      <a href="#process"><span>05</span>逐步做成片</a>
+      <a href="#review"><span>06</span>确认与检查</a>
+      <a href="#delivery"><span>07</span>交付与修改</a>
+      <a href="#tools"><span>08</span>工具分别做什么</a>
+      <a href="#commands"><span>09</span>命令参考</a>
+      <a href="#faq"><span>10</span>常见问题</a>
+    </nav>
+    <div class="sidebar-bottom"><a href="https://github.com/dadiaoliyaqiao-max/codex-video-workflow" target="_blank" rel="noopener">打开公开仓库 ↗</a></div>
+  </aside>
+  <main>
+    <div class="hero" id="top"><div class="hero-inner">
+      <div class="eyebrow">给第一次使用的同事</div>
+      <h1>从素材到成片，<br><em>按这份教程走。</em></h1>
+      <p class="hero-lead">安装一次工具，给每条视频建独立项目。Codex 负责整理素材、制定方案、剪辑和导出；你负责提供要求，并在三个关键版本上确认。</p>
+      <div class="hero-meta"><span>Windows</span><span>公开仓库，无需 GitHub 账号</span><span>单文件 HTML，可离线打开</span><span>适用于短视频和系列视频</span></div>
+      <div class="hero-actions"><a class="button primary" href="#install">从安装开始 ↓</a><a class="button ghost" href="#process">直接看制作流程</a></div>
+    </div></div>
+    <div class="content">
+      <section class="section" id="overview"><div class="section-head"><span class="section-number">01</span><div><h2>先看全流程</h2><p class="section-lead">你不需要自己逐条敲剪辑命令。按顺序提供素材、看成果、提修改或确认即可。</p></div></div>
+        <div class="cards">
+          <div class="card"><span class="index">1</span><h3>安装环境</h3><p>复制一行命令。安装器下载流程包，检查并准备剪辑、转写、动效和封面工具。</p></div>
+          <div class="card"><span class="index">2</span><h3>准备每条片的素材</h3><p>放入独立项目目录，告诉 Codex 开头、结尾、口播、参考片、封面要求及禁用素材。</p></div>
+          <div class="card"><span class="index">3</span><h3>看三个实际成果</h3><p>依次确认剪辑思路、正式分镜、完整预览连同真实封面。需要调整就直接指出。</p></div>
+          <div class="card"><span class="index">4</span><h3>领取成片和工程</h3><p>拿到 MP4、封面、字幕、可继续修改的 EDL 和设计源，以及必要的音乐字体署名。</p></div>
+        </div>
+        <div class="callout"><strong>先记住这条原则</strong><p>“采用这套流程”只表示工作方式确定，并不等于任何新视频已经审过。每条视频有自己的素材、需求和确认记录。</p></div>
+      </section>
+
+      <section class="section" id="install"><div class="section-head"><span class="section-number">02</span><div><h2>第一次使用：一键安装</h2><p class="section-lead">先准备 Windows PowerShell、网络和已登录的 Codex 桌面应用。GitHub 不用注册。</p></div></div>
+        <div class="panel">
+          <h3>在 PowerShell 粘贴这一整行，按回车</h3>
+          <div class="codebox"><div class="codebar"><span>PowerShell · 一行安装与更新</span><button class="copy" data-copy="install-command">复制命令</button></div><pre id="install-command">$setup = Join-Path $env:TEMP 'codex-video-workflow-bootstrap.ps1'; Invoke-WebRequest 'https://raw.githubusercontent.com/dadiaoliyaqiao-max/codex-video-workflow/main/scripts/bootstrap-windows.ps1' -OutFile $setup -UseBasicParsing; powershell.exe -NoProfile -ExecutionPolicy Bypass -File $setup</pre></div>
+          <div class="mini-grid"><div class="mini"><b>下载到哪里？</b><span>默认在“文档/CodexVideoWorkflow/codex-video-workflow-main”；以终端最后打印的完整路径为准。</span></div><div class="mini"><b>安装什么？</b><span>缺失的 Node.js、Python、FFmpeg、Git、CMake；本地 Pillow、Hypit、HyperFrames、Puppeteer、浏览器和中文转写准备。</span></div><div class="mini"><b>怎么看结果？</b><span>打开 <code>install-logs/install-report.json</code>，确认状态为 <code>complete</code>，且关键步骤没有失败或意外跳过。</span></div></div>
+          <div class="callout warning"><strong>首次安装可能需要一些时间</strong><p>浏览器和转写模型需要下载；WinGet 可能弹出系统管理员确认。安装失败时看报告中的错误，处理后重复运行同一行。以后也可用同一行更新流程代码，原有 <code>runtime.local.json</code> 和 <code>剪辑项目/</code> 会保留。</p></div>
+          <p class="small">这条命令会从公开 GitHub 仓库下载并运行脚本。运行前可先<a href="https://github.com/dadiaoliyaqiao-max/codex-video-workflow/blob/main/scripts/bootstrap-windows.ps1" target="_blank" rel="noopener">查看启动脚本源码</a>。安装器不会安装 Codex 桌面应用或替你登录账号。</p>
+        </div>
+      </section>
+
+      <section class="section" id="materials"><div class="section-head"><span class="section-number">03</span><div><h2>准备一条视频的素材</h2><p class="section-lead">每条视频单独放一个项目。原始视频和录音保持不变；剪辑生成的文件留在该项目的 <code>edit/</code> 中。</p></div></div>
+        <div class="split"><div class="panel"><h3>推荐目录</h3><div class="filetree">剪辑项目/
+└─ 项目名/
+   ├─ 素材/          原视频、口播录音、片尾等
+   ├─ 参考视频/      可选：想参照的剪辑样片
+   ├─ 封面参考/      可选：同系列版式示例
+   └─ edit/          Codex 建档后生成，不手动改原片</div><p class="note" style="margin-top:12px">素材已在别处也可以，给 Codex 完整路径即可。不要把另一条视频的素材或确认记录混进来。</p></div>
+          <div class="panel"><h3>开工前告诉 Codex</h3><div class="checklist" data-check-group="material">
+            <label class="checkrow"><input type="checkbox" data-check="material-1"><span>这条片的用途、发布平台、目标观众和期望时长</span></label>
+            <label class="checkrow"><input type="checkbox" data-check="material-2"><span>画幅与目标帧率；例如“竖屏、最终 60 fps”</span></label>
+            <label class="checkrow"><input type="checkbox" data-check="material-3"><span>开头、正文、真人结尾和品牌片尾分别是哪几个文件</span></label>
+            <label class="checkrow"><input type="checkbox" data-check="material-4"><span>口播录音、配乐要求、必须保留或不能使用的内容</span></label>
+            <label class="checkrow"><input type="checkbox" data-check="material-5"><span>标题、副标题、封面参考、安全区域和人物照片</span></label>
+            <label class="checkrow"><input type="checkbox" data-check="material-6"><span>是否有参考视频，以及想参考它的哪一部分</span></label>
+          </div><div class="progress" aria-hidden="true" style="margin-top:13px"><span data-progress="material"></span></div><p class="progress-label" data-progress-label="material">0 / 6 已准备</p></div></div>
+        <div class="callout"><strong>没有的素材不用硬凑</strong><p>不是每条片都要有参考视频、真人照片或品牌片尾。把“没有”告诉 Codex 即可。空间镜头和细节镜头按口播内容选用，也不需要把所有素材都塞进成片。</p></div>
+      </section>
+
+      <section class="section" id="start"><div class="section-head"><span class="section-number">04</span><div><h2>在 Codex 中开工</h2><p class="section-lead">将安装结束时显示的流程目录设为 Codex 的工作目录，开启新对话。复制下方文字，替换方括号中的内容。</p></div></div>
+        <div class="panel"><h3>新视频：发这段指令</h3><div class="codebox"><div class="codebar"><span>发给 Codex · 新项目</span><button class="copy" data-copy="new-prompt">复制指令</button></div><pre id="new-prompt">先读本目录 AGENTS.md 和 workflow-kit/codex-video-workflow/SKILL.md。
+请为【项目名】建立独立的剪辑项目，素材在【完整路径】。
+本期用途和要求：【平台、画幅、时长、帧率、标题、封面、配乐、字幕、参考视频、必留与禁用内容】。
+先盘点素材和声音，给我剪辑思路；按思路、正式分镜、完整预览＋实际封面三个确认点推进。
+请告诉我当前缺少什么，以及下一步我需要看什么。</pre></div><p class="note">项目名尽量具体，例如“厨房改造案例_2026-11”。如果尚未提供全部要求，先写已有信息；Codex 会集中提出真正影响方案的问题。</p></div>
+        <div class="panel soft"><h3>继续一条做过的片</h3><p>在新对话里告诉 Codex 原项目目录，并要求它先运行 <code>context</code> 读取当前 brief、EDL 和状态。不要重新初始化或套用另一条片的审批。</p><div class="codebox"><div class="codebar"><span>发给 Codex · 续作</span><button class="copy" data-copy="resume-prompt">复制指令</button></div><pre id="resume-prompt">继续项目【项目完整路径】。先读 AGENTS.md，并运行工作流工具.cmd context --project "【项目完整路径】"；以本片当前 brief、EDL 和 workflow/state 为准。我的这轮修改是：【具体修改】。只重做受影响部分，并告诉我需要重新确认的成果。</pre></div></div>
+      </section>
+
+      <section class="section" id="process"><div class="section-head"><span class="section-number">05</span><div><h2>一条视频怎样做出来</h2><p class="section-lead">下面是制作时真正的先后顺序。黄色“确认点”表示你需要看到实际成果后明确回复。</p></div></div>
+        <div class="timeline">
+          <article class="phase"><div class="phase-count">0</div><div class="phase-body"><header><h3>建档与素材盘点</h3></header><div class="phase-cols"><div><b>Codex 会做</b><p>读取本片要求；用 FFprobe 记录素材路径、指纹、时长、画幅、帧率和音轨；查看空间、细节、人物及首尾素材；裁掉不稳定的起落镜。口播做真实转写和词时间校对。</p></div><div><b>你要做</b><p>确认文件有无缺漏，指出必留、禁用和不适合的画面。参考片只用于学习做法，不会自动替代本片素材。</p></div></div><div class="phase-output">内部入口：<code>init → inventory</code>；有参考视频时再做 <code>reference</code>。产物是 brief、素材索引、截图和声音证据。</div></div></article>
+          <article class="phase"><div class="phase-count">1</div><div class="phase-body"><header><h3>剪辑思路</h3><span class="gate">确认点 1</span></header><div class="phase-cols"><div><b>Codex 会做</b><p>提出开场、正文、结尾的叙事顺序，说明选哪些镜头、为什么选；同时确定调色、字幕、主字、转场、音乐、音效和封面方向。新风格附 6–8 秒带声音代表样段。</p></div><div><b>你要做</b><p>看逻辑、节奏、画面选择和风格。想改就说具体哪里；满意时明确回复“确认这版剪辑思路”。</p></div></div><div class="phase-output">确认只对应你实际看过的这一版思路，不代表分镜或成片已通过。</div></div></article>
+          <article class="phase"><div class="phase-count">2</div><div class="phase-body"><header><h3>正式分镜与剪辑表</h3><span class="gate">确认点 2</span></header><div class="phase-cols"><div><b>Codex 会做</b><p>给每镜标素材、原片入出点、成片时间、真实截图、口播/字幕、主字与音效时刻、转场和调色。检查空间与细节是否匹配，是否出现重复画面或提前出字。</p></div><div><b>你要做</b><p>逐段核对内容和镜头。特别看开头、结尾、品牌片尾、重点词对应画面。满意时明确确认这版分镜。</p></div></div><div class="phase-output">内部入口：<code>storyboard</code>。产物包含 <code>storyboard.html/json</code> 与 <code>edl.json</code>。</div></div></article>
+          <article class="phase"><div class="phase-count">3</div><div class="phase-body"><header><h3>正式制作</h3></header><div class="phase-cols"><div><b>Codex 会做</b><p>按已确认分镜剪视频、调色、制作文字和转场；用真实词时间排字幕与重点字；分层混合口播、配乐和音效；制作可编辑的实际封面。目标 60 fps 等数值仅在本片明确提出时执行。</p></div><div><b>你要做</b><p>若出现新素材、新标题或新要求，及时发给 Codex。不要把上一条视频的色值、曲目或人物视为本片默认。</p></div></div><div class="phase-output">普通剪辑主要由 FFmpeg 完成；复杂字效按需用 HyperFrames 或 Remotion，有参考片时按需用 Hypit。</div></div></article>
+          <article class="phase"><div class="phase-count">4</div><div class="phase-body"><header><h3>完整预览＋实际封面</h3><span class="gate">确认点 3</span></header><div class="phase-cols"><div><b>Codex 会做</b><p>保留 1920 长边的最终质量内部母版，并生成 1280 长边完整审片版；做一次集中技术、画面和声音复核，展示真实 MP4 与 PNG/JPG 封面。</p></div><div><b>你要做</b><p>从头到尾观看并听关键段，核对字幕、配乐、转场、封面、安全区和片尾。修改就逐条指出；满意时明确确认这版预览与封面。</p></div></div><div class="phase-output">内部入口：<code>render-preview</code>。没有看到真实预览和封面，就不算完成这个确认点。</div></div></article>
+          <article class="phase"><div class="phase-count">5</div><div class="phase-body"><header><h3>最终交付</h3></header><div class="phase-cols"><div><b>Codex 会做</b><p>核对批准版本、母版和检查记录，复用相同母版交付；归档最终 MP4、封面、字幕、EDL、设计源及必要署名，并验证文件链接和依赖。</p></div><div><b>你要做</b><p>下载或复制完整交付目录，检查视频能播放、封面与成片属于同一版，再交给发布同事。</p></div></div><div class="phase-output">内部入口：<code>render-final</code>；发布到平台是单独操作，未经授权不会自动上传。</div></div></article>
+        </div>
+      </section>
+
+      <section class="section" id="review"><div class="section-head"><span class="section-number">06</span><div><h2>审片时看什么</h2><p class="section-lead">完整预览要看整条，不只看截图。你可以用下面的清单逐项检查。</p></div></div>
+        <div class="split"><div class="panel"><h3>画面与文字</h3><div class="checklist" data-check-group="review-visual">
+          <label class="checkrow"><input type="checkbox" data-check="visual-1"><span>开头、正文、真人结尾、品牌片尾齐全，连接自然</span></label>
+          <label class="checkrow"><input type="checkbox" data-check="visual-2"><span>起落镜没有明显抖动，空间/细节镜头对应口播</span></label>
+          <label class="checkrow"><input type="checkbox" data-check="visual-3"><span>没有邻近话题重复使用同一画面</span></label>
+          <label class="checkrow"><input type="checkbox" data-check="visual-4"><span>字幕按语意连贯分段，清楚可读</span></label>
+          <label class="checkrow"><input type="checkbox" data-check="visual-5"><span>重点字压准实际说到的词，不提前泄露</span></label>
+          <label class="checkrow"><input type="checkbox" data-check="visual-6"><span>亮度、光感和肤色自然，没有高光发白或重复调色</span></label>
+        </div><div class="progress" aria-hidden="true" style="margin-top:13px"><span data-progress="review-visual"></span></div><p class="progress-label" data-progress-label="review-visual">0 / 6 已检查</p></div>
+          <div class="panel"><h3>声音、封面与文件</h3><div class="checklist" data-check-group="review-other">
+            <label class="checkrow"><input type="checkbox" data-check="other-1"><span>口播清楚，音乐符合节奏且不会盖住人声</span></label>
+            <label class="checkrow"><input type="checkbox" data-check="other-2"><span>出字与转场音效听得见，音量不过载</span></label>
+            <label class="checkrow"><input type="checkbox" data-check="other-3"><span>封面标题、副标题准确，文字和人物不被裁切</span></label>
+            <label class="checkrow"><input type="checkbox" data-check="other-4"><span>封面人物与原照片一致，未更换五官或姿态</span></label>
+            <label class="checkrow"><input type="checkbox" data-check="other-5"><span>目标画幅、帧率、总时长、末尾画面正确</span></label>
+            <label class="checkrow"><input type="checkbox" data-check="other-6"><span>视频完整播放，没有黑帧、音频截断或文件损坏</span></label>
+          </div><div class="progress" aria-hidden="true" style="margin-top:13px"><span data-progress="review-other"></span></div><p class="progress-label" data-progress-label="review-other">0 / 6 已检查</p></div></div>
+        <p class="note">勾选状态仅保存在你当前浏览器，不会上传。系列封面安全区以本片要求为准；不要把某条片的坐标直接套给所有视频。</p>
+      </section>
+
+      <section class="section" id="delivery"><div class="section-head"><span class="section-number">07</span><div><h2>交付与后续修改</h2><p class="section-lead">交付的是一套可继续修改的文件，而不只是一个 MP4。</p></div></div>
+        <div class="split"><div class="panel"><h3>应拿到的文件</h3><ul class="steps-list"><li>最终视频 <strong>MP4</strong>，以及同版本封面 <strong>PNG/JPG</strong></li><li>可单独使用的字幕 <strong>SRT/ASS</strong></li><li>剪辑表 <strong>EDL</strong>、封面/动效设计源与工程入口</li><li>必要的音乐、字体和其他素材署名</li><li>交付清单，写清文件路径及外部素材依赖</li></ul><p class="note">EDL 是可追溯的 JSON 剪辑数据，不是剪映、Premiere 或 DaVinci Resolve 的原生工程。</p></div>
+          <div class="panel"><h3>修改时这样说更快</h3><p>给出位置、问题和想要的结果。例如：</p><ul class="steps-list"><li>“18 秒处主字比口播早，等说到‘收口’才出现。”</li><li>“封面文字整体下移，但保持原字号和排版。”</li><li>“配乐再轻快一些，音效比现在明显一点。”</li><li>“这两个话题用了同一空间画面，换掉其中一镜。”</li></ul><p class="note">Codex 会按影响范围修改：封面改动复用视频，音量改动复用画面，单组动效只重做该组；变更后检查受影响的确认。</p></div></div>
+        <div class="callout warning"><strong>确实不需要再审时</strong><p>明确写“这条视频按当前要求直接导出终稿，不再给我审”。这项授权只对你指定的这一条片和这一轮范围有效；技术检查、完整性检查与交付清单仍须完成。不要让 Codex 把未看过的预览记成已确认。</p></div>
+      </section>
+
+      <section class="section" id="tools"><div class="section-head"><span class="section-number">08</span><div><h2>每个工具分别做什么</h2><p class="section-lead">安装了某个工具，不表示每条视频都会用它。实际使用情况以本片记录的命令、输入和产物为准。</p></div></div>
+        <div class="table-wrap"><table class="table"><thead><tr><th>工具 / 项目</th><th>作用</th><th>什么时候用</th></tr></thead><tbody>
+          <tr><td><strong>Codex</strong><br><span class="pill self">协作入口</span></td><td>理解需求、选镜、组织分镜、检查结果并调用本地工具。</td><td>整个流程；桌面应用与账号需自行准备。</td></tr>
+          <tr><td><strong>workflow-kit</strong><br><span class="pill self">仓库自带</span></td><td>项目建档、素材索引、EDL、阶段状态、确认和缓存检查。</td><td>每条片。入口是 <code>工作流工具.cmd</code>。</td></tr>
+          <tr><td><strong>FFprobe / FFmpeg</strong><br><span class="pill">常规剪辑</span></td><td>探测素材、抽帧、切剪、调色、字幕、混音、编码和完整解码检查。</td><td>大多数视频；由安装器检查或安装。</td></tr>
+          <tr><td><strong>Pillow</strong><br><span class="pill">图像处理</span></td><td>图片检查、截图索引及辅助图像处理。</td><td>盘点、分镜或封面辅助。</td></tr>
+          <tr><td><strong>HyperFrames + 本地 Whisper</strong><br><span class="pill optional">按内容启用</span></td><td>中文口播转写准备；复杂文字与图形动效可用 HyperFrames。</td><td>有口播或需要复杂字效时；词时间仍要对照真实声音。</td></tr>
+          <tr><td><strong>Hypit</strong><br><span class="pill optional">参考片时</span></td><td>拆解参考视频的镜头边界、时间码和画面变化。</td><td>用户给参考片时；无参考片可跳过。</td></tr>
+          <tr><td><strong>Puppeteer + Chrome</strong><br><span class="pill optional">封面排版</span></td><td>把可编辑的 HTML/CSS 封面准确截图成 PNG/JPG。</td><td>需要精确排版封面时；不负责替换真人或自动抠像。</td></tr>
+          <tr><td><strong>Remotion</strong><br><span class="pill optional">备选</span></td><td>有现成 React 模板或复杂参数化动画时可选。</td><td>按项目需要和许可条件单独配置；默认安装器不装。</td></tr>
+        </tbody></table></div>
+        <div class="callout"><strong>素材和工具分开理解</strong><p>流程包不包含别人的原视频、真人照片、已批准成片、账号或密钥。工具自动安装成功也不代表某条新片已转写、审美通过或能直接发布。</p></div>
+      </section>
+
+      <section class="section" id="commands"><div class="section-head"><span class="section-number">09</span><div><h2>给技术同事的命令参考</h2><p class="section-lead">这些是 Codex 在合适阶段调用的入口，不是让人一次性从上到下全部运行。</p></div></div>
+        <div class="codebox"><div class="codebar"><span>在流程包根目录运行</span><button class="copy" data-copy="workflow-commands">复制命令</button></div><pre id="workflow-commands">.\工作流工具.cmd doctor
+.\工作流工具.cmd init --project "剪辑项目/新视频" --name "新视频"
+.\工作流工具.cmd context --project "剪辑项目/新视频"
+.\工作流工具.cmd inventory --project "剪辑项目/新视频"
+# 有参考视频且 Hypit 就绪时：
+.\工作流工具.cmd reference --project "剪辑项目/新视频"
+# 用户看过并明确确认剪辑思路之后：
+.\工作流工具.cmd approve --project "剪辑项目/新视频" --stage strategy --message "用户实际原文"
+.\工作流工具.cmd storyboard --project "剪辑项目/新视频"
+# 用户看过并明确确认分镜之后：
+.\工作流工具.cmd approve --project "剪辑项目/新视频" --stage storyboard --message "用户实际原文"
+.\工作流工具.cmd render-preview --project "剪辑项目/新视频"
+# 用户看过完整预览和真实封面并明确确认之后：
+.\工作流工具.cmd approve --project "剪辑项目/新视频" --stage preview --message "用户实际原文"
+.\工作流工具.cmd render-final --project "剪辑项目/新视频"</pre></div>
+        <div class="callout warning"><strong>不要提前执行 approve</strong><p><code>approve</code> 只能记录用户对当前实际成果的明确确认。策略通过不等于分镜通过，分镜通过不等于完整视频通过；测试项目的确认也不能转用到真实视频。</p></div>
+        <p class="note">查看项目进度：<code>.\工作流工具.cmd status --project "剪辑项目/新视频"</code>；继续项目：<code>context</code>；查询命令耗时：<code>metrics</code>。命令耗时不是整个项目耗时，未采集到的 token 不能编数。</p>
+      </section>
+
+      <section class="section" id="faq"><div class="section-head"><span class="section-number">10</span><div><h2>常见问题</h2><p class="section-lead">遇到阻塞时，先看安装报告或项目当前状态，再处理真正失败的环节。</p></div></div>
+        <div class="faq">
+          <details><summary>安装失败了怎么办？</summary><p>打开安装目录中的 <code>install-logs/install-report.json</code>，看 <code>errors</code> 与最后一个步骤。网络、WinGet 或权限问题解决后，重复运行同一行安装命令。不要把 <code>incomplete</code> 当作安装完成。</p></details>
+          <details><summary>没有 GitHub 账号能用吗？</summary><p>可以。仓库公开，一行命令直接下载；但 Codex 桌面应用和其账号登录仍需自行准备。</p></details>
+          <details><summary>为什么 Codex 还要我确认三次？</summary><p>思路、分镜和完整预览是不同成果。确认点保证后续成片与自己看过的版本一致。你可以在某条片明确授权直接交付，但不能把一次确认自动沿用到别的片。</p></details>
+          <details><summary>要把所有中间素材都用进去吗？</summary><p>不用。根据口播内容选空间、细节和人物镜头，并检查起落镜抖动与相邻话题重复画面。</p></details>
+          <details><summary>字幕或重点字跟不上口播怎么办？</summary><p>告诉 Codex 具体时间和词。它应检查真实词时间，再调整字幕/主字与音效；不能按字数比例猜时间，也不能让重点字先于口播出现。</p></details>
+          <details><summary>封面改了，整条视频都要重做吗？</summary><p>通常不需要。封面可单独更新并检查版式与安全区；若视频本身没变，应复用原视频。若改的是混音，则复用已核验画面。</p></details>
+          <details><summary>导出的 EDL 能直接拿到剪映打开吗？</summary><p>不能。它是本流程的 JSON 剪辑数据和可追溯工程，不是剪映、Premiere 或 DaVinci Resolve 的原生工程文件。</p></details>
+        </div>
+      </section>
+
+      <footer class="footer"><strong>Codex 视频剪辑工作流 · 同事教程</strong><div class="footer-links"><a href="https://github.com/dadiaoliyaqiao-max/codex-video-workflow" target="_blank" rel="noopener">公开仓库</a><a href="https://github.com/dadiaoliyaqiao-max/codex-video-workflow/blob/main/完整工作流.md" target="_blank" rel="noopener">完整工作流</a><a href="https://github.com/dadiaoliyaqiao-max/codex-video-workflow/blob/main/逐步工具调用与开源项目.md" target="_blank" rel="noopener">工具与开源项目</a><a href="#top">返回顶部 ↑</a></div><p style="margin-top:13px">本页为单文件 HTML，无外部字体、图片或脚本；下载后可离线打开。具体视频以当期 brief、素材和确认记录为准。</p></footer>
+    </div>
+  </main>
+</div>
+<script>
+  (function(){
+    const storageKey='codex-video-tutorial-checks-v1';
+    let saved={};try{saved=JSON.parse(localStorage.getItem(storageKey)||'{}')}catch(e){}
+    const boxes=[...document.querySelectorAll('[data-check]')];
+    boxes.forEach(box=>{box.checked=!!saved[box.dataset.check];box.addEventListener('change',()=>{saved[box.dataset.check]=box.checked;try{localStorage.setItem(storageKey,JSON.stringify(saved))}catch(e){}updateProgress()})});
+    function updateProgress(){document.querySelectorAll('[data-check-group]').forEach(group=>{const list=[...group.querySelectorAll('[data-check]')],done=list.filter(x=>x.checked).length,name=group.dataset.checkGroup;const bar=document.querySelector('[data-progress="'+name+'"]'),label=document.querySelector('[data-progress-label="'+name+'"]');if(bar)bar.style.width=(list.length?done/list.length*100:0)+'%';if(label)label.textContent=done+' / '+list.length+(name==='material'?' 已准备':' 已检查')})}
+    updateProgress();
+    document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{const target=document.getElementById(button.dataset.copy);if(!target)return;const value=target.textContent.trim(),original=button.textContent;try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(value)}else{const box=document.createElement('textarea');box.value=value;box.style.position='fixed';box.style.opacity='0';document.body.appendChild(box);box.select();if(!document.execCommand('copy'))throw Error('copy failed');box.remove()}button.textContent='已复制'}catch(e){button.textContent='请手动选择文字复制'}setTimeout(()=>button.textContent=original,2200)}));
+    const links=[...document.querySelectorAll('.sidebar nav a')],sections=[...document.querySelectorAll('.section')];
+    if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio).slice(0,1).forEach(entry=>{links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id))})},{rootMargin:'-15% 0px -70% 0px'});sections.forEach(s=>observer.observe(s))}
+  })();
+</script>
+</body>
+</html>
