@@ -1,0 +1,38 @@
+{
+  "version": "2026-11-07",
+  "precedence": "当次用户 > 当期brief/requirements > 系列规范 > 工具默认",
+  "shared": {
+    "human_gates": [
+      "strategy",
+      "storyboard",
+      "preview_with_cover"
+    ],
+    "original_media_immutable": true,
+    "reuse_alignment_by_source_hash": true,
+    "partial_rebuild": true,
+    "default_cover_required": true,
+    "direct_delivery": "only upon explicit project-scoped user request"
+  },
+  "interior_series": {
+    "enabled_when": "用户指定同系列或实际内容确属该系列并在本片思路中确定",
+    "cover_style": "templates/interior-cover-style.json",
+    "visual_reference": "series-assets/封面版式示意.svg",
+    "subtitles": "连贯语意、柔和阴影；不默认粗黑描边",
+    "grade": "自然提亮，肤色高光保留；强度按本片",
+    "music": "按内容选节奏；不默认复用上片曲目"
+  },
+  "per_project_variables": [
+    "title",
+    "subtitle",
+    "person",
+    "source_media",
+    "fps",
+    "temperature",
+    "sharpness",
+    "reference_video",
+    "music",
+    "outro",
+    "safe_area",
+    "authorization"
+  ]
+}

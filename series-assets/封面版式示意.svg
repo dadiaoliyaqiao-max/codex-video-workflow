@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="960" viewBox="0 0 540 960" role="img" aria-label="系列封面布局示意">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#70838a"/><stop offset="1" stop-color="#2f433f"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="2" dy="4" stdDeviation="5" flood-opacity=".55"/></filter>
+  </defs>
+  <rect width="540" height="960" fill="url(#bg)"/>
+  <path d="M0 240 Q160 190 320 260 T540 210 M0 580 Q200 510 540 570" fill="none" stroke="#b3bbb1" stroke-width="54" opacity=".18"/>
+  <rect width="540" height="960" fill="#101817" opacity=".38"/>
+  <rect x="40" y="225" width="460" height="500" fill="none" stroke="#e9d6ab" stroke-dasharray="7 7" opacity=".65"/>
+  <path d="M411 321 C465 329 479 380 476 423 C470 451 450 470 433 480 C468 506 492 547 504 619 L519 858 L331 858 L347 619 C354 548 378 507 405 480 C382 455 373 428 377 399 C379 355 387 324 411 321Z" fill="#fff" transform="translate(12 2)"/>
+  <path d="M411 321 C465 329 479 380 476 423 C470 451 450 470 433 480 C468 506 492 547 504 619 L519 858 L331 858 L347 619 C354 548 378 507 405 480 C382 455 373 428 377 399 C379 355 387 324 411 321Z" fill="#27302e"/>
+  <g font-family="Microsoft YaHei, sans-serif" font-weight="bold" filter="url(#shadow)">
+    <text x="46" y="390" font-size="53" fill="#e9d6ab">第一行标题</text>
+    <text x="46" y="463" font-size="56" fill="#fff">第二行标题</text>
+    <text x="46" y="536" font-size="56" fill="#fff">第三行标题</text>
+  </g>
+  <text x="47" y="620" font-size="23" font-family="Microsoft YaHei, sans-serif" fill="#fff">地点 / 副标题</text>
+  <text x="40" y="754" font-size="16" font-family="Microsoft YaHei, sans-serif" fill="#e9d6ab">虚线框：示意安全区，实际数值按本片</text>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "status": "not_transcribed",
+  "audio_file": null,
+  "audio_sha256": null,
+  "method": null,
+  "model_version": null,
+  "language": "zh",
+  "words": [],
+  "phrases": [],
+  "note": "填写真实ASR/声学对齐词时间；不可按字数估算或用空模板声称已完成。"
+}

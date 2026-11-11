@@ -1,0 +1,8 @@
+{
+  "shots": [],
+  "grade": "",
+  "subtitles": null,
+  "overlays": [],
+  "music": null,
+  "template_note": "空模板不可渲染。每镜填写实际source ID、start、end、frame、key_content、covers、caption、audio、transition。时间为源视频秒数，end不包含。"
+}

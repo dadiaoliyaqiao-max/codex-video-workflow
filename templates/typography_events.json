@@ -1,0 +1,16 @@
+{
+  "fps": null,
+  "speech_timing_file": "analysis/speech_timing.json",
+  "events": [],
+  "event_fields": [
+    "id",
+    "text",
+    "word_ids",
+    "start_frame",
+    "end_frame",
+    "design_asset",
+    "sfx_file",
+    "sfx_gain_db"
+  ],
+  "rule": "首次可见不得早于真实词起点；声音事件和文字事件共用轴。"
+}

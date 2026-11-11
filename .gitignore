@@ -1,0 +1,17 @@
+runtime.local.json
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+workflow-kit/_verification/
+剪辑项目/*/
+!剪辑项目/放置说明.txt
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.aac

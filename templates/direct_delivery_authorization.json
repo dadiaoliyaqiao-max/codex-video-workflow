@@ -1,0 +1,10 @@
+{
+  "mode": "not_authorized",
+  "user_message": null,
+  "scope": null,
+  "recorded_at": null,
+  "human_review_performed": false,
+  "edl_sha256": null,
+  "cover_sha256": null,
+  "note": "仅收到当片真实明确免审要求后填写；模板本身不是授权。"
+}

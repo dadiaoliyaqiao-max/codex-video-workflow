@@ -1,0 +1,24 @@
+{
+  "project_name": "",
+  "objective": "",
+  "target_duration_s": null,
+  "aspect_ratio": "",
+  "fps": "",
+  "required_content": [],
+  "avoid_content": [],
+  "subtitles_required": true,
+  "allow_silent_audio": false,
+  "preview_long_edge": 1280,
+  "final_long_edge": 1920,
+  "cover": {
+    "required": true,
+    "title": "",
+    "subtitle": "",
+    "series_id": "",
+    "size": [1080, 1920],
+    "reference_files": [],
+    "safe_area_px": null,
+    "preserve_existing_layout": true
+  },
+  "notes": "模板示例画幅需按本期需求填写；空值不能通过就绪检查。"
+}

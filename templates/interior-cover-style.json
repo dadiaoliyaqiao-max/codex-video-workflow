@@ -1,0 +1,35 @@
+{
+  "canvas": [
+    1080,
+    1920
+  ],
+  "safe_area": {
+    "left": 80,
+    "top": 450,
+    "right": 1000,
+    "bottom": 1450,
+    "source": "用户提供的本系列视频号参考，并非通用平台标准"
+  },
+  "required_inside": [
+    "main_title",
+    "subtitle",
+    "head_with_white_offset"
+  ],
+  "layout": "left aligned three title lines, person on right",
+  "colors": {
+    "first_line": "#e9d6ab",
+    "other_title": "#ffffff"
+  },
+  "fonts": {
+    "title": "Microsoft YaHei Bold or verified licensed substitute",
+    "subtitle": "KaiTi or verified licensed substitute"
+  },
+  "background_dimmer_opacity_reference": 0.4,
+  "person": "original photo pixels, preserve identity, anatomy, pose and proportions",
+  "adjustment_policy": "Preserve existing design; translate group first; uniform scaling only if needed",
+  "white_silhouette_reference_offset": [
+    24,
+    3
+  ],
+  "numeric_style_values_are_reference_not_universal": true
+}
