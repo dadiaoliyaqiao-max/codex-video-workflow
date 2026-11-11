@@ -1,7 +1,7 @@
 {
   "date": "2026-11-11",
   "scope": "本机新目录下的工具源码包、规则和合成短片验证；不是新业务视频验收",
-  "documentation_revision": "补充逐步工具调用与开源项目；本轮只更新文字/链接/包清单，不重复合成短片测试",
+  "documentation_revision": "新增 Windows 一行启动命令、自动安装脚本、锁定依赖、封面浏览器工具；本轮验证本机安装核心路径与公开仓库下载",
   "runtime_doctor": {
     "passed": true,
     "python": "3.12.14",
@@ -39,7 +39,7 @@
     "旧片edit已不在当前工作区，无法重读全部历史CLI日志",
     "新片审美和连续听审",
     "本包Hypit完整参考分析执行",
-    "HyperFrames/Remotion安装或新动效渲染",
+    "HyperFrames新动效渲染和Remotion安装未验证",
     "项目专用免审导出脚本"
   ],
   "token_usage": null,
@@ -63,7 +63,7 @@
     "lockfile_install": "Hypit 0.3.1, HyperFrames 0.9.30, Puppeteer 25.17.0",
     "browser": "system Chrome detected via HyperFrames browser path",
     "bootstrap_parser": "passed",
-    "bootstrap_public_download": "pending publication",
+    "bootstrap_public_download": "passed from anonymous raw plus codeload archive on 2026-11-11",
     "fresh_machine_winget": "not verified",
     "codex_skills": "not verified in local smoke run",
     "chinese_asr_model": "not verified in local smoke run",
