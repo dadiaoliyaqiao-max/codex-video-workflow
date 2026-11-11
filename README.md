@@ -4,7 +4,7 @@
 
 ## 从哪里开始
 
-第一次交给同事使用，建议先看可离线打开的[图文教程](index.html)：一键安装、准备素材、在 Codex 开工、三次确认、成片交付都在同一页。
+第一次交给同事使用，建议先发[在线图文教程](https://dadiaoliyaqiao-max.github.io/codex-video-workflow/)：一键安装、准备素材、在 Codex 开工、三次确认、成片交付都在同一页。仓库中的 [index.html](index.html) 下载后也可离线打开。
 
 1. 第一次使用：无需 GitHub 账号，在 Windows PowerShell 粘贴[同事下载与使用](同事下载与使用.md)中的一行命令，即可下载本包、安装缺失的基础工具及 Hypit、HyperFrames、Puppeteer和对应Codex技能，并做本机检查。已下载时也可双击 **`一键安装并检查.cmd`**。
 2. 开始一个视频：阅读[开始使用](开始使用.md)，将素材放进独立的 `剪辑项目/项目名/素材/`，让 Codex 读取根目录 `AGENTS.md` 和 `workflow-kit/codex-video-workflow/SKILL.md`。
