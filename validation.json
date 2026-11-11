@@ -45,7 +45,7 @@
   "token_usage": null,
   "historical_performance_is_not_new_project_guarantee": true,
   "code_origin": "本工作区workflow-kit与video-use小型helper副本；仅修改副本路径解析，未改动原工程",
-  "private_repository_release": {
+  "github_release": {
     "date": "2026-11-11",
     "scope": "仓库文档、无真人封面示意、本机路径排除与入口检查；未重新制作真实视频",
     "runtime_local_json_excluded": true,
